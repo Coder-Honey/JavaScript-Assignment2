@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Seven</title>
+</head>
+<body>
+    <p><b>Question 7: Write a JavaScript program to remove items from a dropdown list.
+        <br><br>
+        Answers : 
+    </b></p>
+    <br><br>
+    <select id = "colorSelect">
+        <option>Web Development</option>
+        <option>Python</option>
+        <option>Fashion Designing</option>
+        <option>Java Script</option>
+        <option>Political Science</option>
+    </select>
+    <input type = "button" onclick = "removeColor()" value = "Select and Remove">
+    <script>
+        function removeColor()
+        {
+            var x = document.getElementById("colorSelect");
+            x.remove(x.selectedIndex);
+        }
+    </script>
+</body>
+</html>

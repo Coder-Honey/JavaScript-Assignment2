@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Six</title>
+</head>
+<body>
+    <p><b>Question 6: Write a JavaScript program to remove duplicate items from an array(ignore case senitivity).
+        <br><br>
+        Answers : 
+    </b></p>
+    <script>
+        function removeDuplicates(num)
+        {
+            var x,len = num.length,out = [],obj = {};
+
+            for (x=0; x<len; x++)
+            {
+                obj[num[x]] = 0;
+            }
+            for (x in obj)
+            {
+                out.push(x);
+            }
+            return out;
+        }
+        var Mynum = [1,2,2,4,5,4,7,8,7,3,6];
+        result = removeDuplicates(Mynum);
+        document.write("Old array: "+Mynum);
+        document.write("<br>");
+        document.write("New array: "+result);
+    </script>
+</body>
+</html>
